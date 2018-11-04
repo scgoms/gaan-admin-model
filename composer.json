@@ -7,7 +7,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "laravel-frontend-presets/tailwindcss": "^0.7.0"
+    },
     "extra": {
         "laravel": {
             "providers": [
