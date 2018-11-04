@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use IsGoms\Admin\Admin as LaravelAdmin;
 use IsGoms\Admin\CustomRouter;
 
-class ServiceProvider extends BaseServiceProvider
+class AdminServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap services.

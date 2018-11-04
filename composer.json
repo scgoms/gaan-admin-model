@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "IsGoms\\Admin\\ServiceProvider"
+                "IsGoms\\Admin\\AdminServiceProvider"
             ],
             "aliases": {
                 "Admin": "IsGoms\\Admin\\Facades\\Admin"
