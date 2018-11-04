@@ -17,9 +17,5 @@
                 "Admin": "IsGoms\\Admin\\Facades\\Admin"
             }
         }
-    },
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/isgoms/"},
-        {"packagist.org": false}
-    ]
+    }
 }
