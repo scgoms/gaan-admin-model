@@ -1,11 +1,12 @@
 {
-    "name": "isgoms/admin",
+    "name": "isgoms/laravel-admin",
     "authors": [
         {
             "name": "Sean Jewell",
             "email": "sean@isgoms.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {},
     "extra": {
         "laravel": {
