@@ -1,0 +1,24 @@
+{
+    "name": "isgoms/admin",
+    "authors": [
+        {
+            "name": "Sean Jewell",
+            "email": "sean@isgoms.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IsGoms\\Admin\\ServiceProvider"
+            ],
+            "aliases": {
+                "Admin": "IsGoms\\Admin\\Facades\\Admin"
+            }
+        }
+    },
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/isgoms/"},
+        {"packagist.org": false}
+    ]
+}
