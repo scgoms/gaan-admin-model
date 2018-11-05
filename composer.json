@@ -10,6 +10,11 @@
     "require": {
         "laravel-frontend-presets/tailwindcss": "^0.7.0"
     },
+    "autoload":{
+        "psr-4":{
+            "IsGoms\\Admin\\": "/src"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
