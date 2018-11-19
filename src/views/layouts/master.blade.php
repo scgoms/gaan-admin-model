@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body class="bg-teal-lightest min-h-screen antialiased">
+<body class="min-h-screen antialiased">
     <div id="app" class="min-h-screen flex flex-col">
         <nav class="bg-white h-12 shadow px-6 md:px-0">
             <div class="container mx-auto h-full">
@@ -43,8 +43,11 @@
                 </div>
             </div>
         </nav>
-        <div class="flex bg-red flex-1">
-            @yield('content')
+        <div class="flex flex-1">
+            @include('admin::partials.sidebar')
+            <div class="flex flex-1 flex-col">
+                @yield('content')
+            </div>
         </div>
 
     </div>

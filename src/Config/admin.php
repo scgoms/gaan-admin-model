@@ -12,4 +12,9 @@ return [
     */
 
     'route_prefix' => 'admin',
+    'model_directory' => '/',
+    'recursive' =>  false,
+    'excluded_models'   =>  [
+        'App\User'
+    ],
 ];

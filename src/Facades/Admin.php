@@ -23,4 +23,9 @@ class Admin extends Facade{
     public static function routes(array $options = []){
         static::$app->make('admin')->routes($options);
     }
+
+    public static function models()
+    {
+        return static::$app->make('admin')->models();
+    }
 }

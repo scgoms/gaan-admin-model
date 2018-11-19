@@ -15,18 +15,18 @@ class AdminServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        $this->publishConfig();
-        $this->publishViews();
+        $this->config();
+        $this->views();
     }
 
-    protected function publishConfig()
+    protected function config()
     {
         $this->publishes([
             __DIR__.'/config/admin.php' => config_path('admin.php'),
         ]);
     }
 
-    protected function publishViews()
+    protected function views()
     {
         $this->loadViewsFrom(__DIR__.'/views', 'admin');
         $this->publishes([
@@ -44,5 +44,10 @@ class AdminServiceProvider extends BaseServiceProvider
         $this->app->singleton('admin', function($app){
             return new LaravelAdmin();
         });
+
+        app()->config['filesystems.disks.models'] = [
+            'driver' => 'local',
+            'root'  =>  app_path(config('admin.model_directory'))
+        ];
     }
 }
